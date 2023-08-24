@@ -7,9 +7,15 @@
 
 	<!---------======== CSS ========--------->
 	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="<?php echo HOME_URI."view/js/sweetalert2/dark.css"; ?>">
 
 	<!---------======== BoxIcons CSS ========--------->
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+	<!---------======== JS Libraries ========--------->
+	<script src="<?php echo HOME_URI."view/js/jquery.min.js"; ?>"></script>
+	<script src="<?php echo HOME_URI."view/js/functions.js"; ?>"></script>
+	<script src="<?php echo HOME_URI."view/js/sweetalert2/sweetalert2.min.js"; ?>"></script>
 
 	<title>Website</title>
 </head>

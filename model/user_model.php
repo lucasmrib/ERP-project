@@ -13,9 +13,10 @@
 			$this->controller = $controller;
 		}
 
-		public function load_info($uid_usuario){
-			$this->db->query("SELECT * FROM general.user WHERE uid_usuario = :uid_usuario");
-			$this->db->bind(':uid_usuario', $uid_usuario);
-			$this->db->execute();
+		public function load_info($login){
+			$this->db->query("SELECT * FROM user.user_credentials WHERE login = :login");
+			$this->db->bind(':login', $login);
+			return $this->db->single();
 		}
+
 	}

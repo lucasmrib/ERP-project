@@ -11,8 +11,16 @@
 		public static function error($tipError){
 			switch ($tipError) {
 
-		 		case 'preencha-campos':
-					return array('title' => 'Preencha os campos!!', 'icone' => 'error', 'erro' => 1);
+		 		case 'missing-info':
+					return array('title' => 'Please fill in all the required fields!!', 'icone' => 'error', 'erro' => 1);
+				break;
+
+				case 'wrong-login':
+					return array('title' => 'The username you entered does not exist!', 'icone' => 'error', 'erro' => 1);
+				break;
+
+				case 'wrong-password':
+					return array('title' => 'Incorrect password, try again.', 'icone' => 'error', 'erro' => 1);
 				break;
 			}
 		}
