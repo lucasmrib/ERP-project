@@ -14,21 +14,20 @@
 		
 		public function user_logged(){
 
-			if ( ! $this->session_validation($_SESSION)) {
+			if (!$this->session_validation($_SESSION)) {
 				return false;
 			}
 
-			if ($_SESSION['token_login'] != $this->logged_token) {
-
+			if ($_SESSION['login_token'] != $this->logged_token) {
 				return false;
 			}
 
 			$this->current_time = time();
 
-			if ( ($this->current_time - $this->logged_time) > 15*6000 ) {
+			if (($this->current_time - $this->logged_time) > 15*6000) {
 
 				foreach ($_SESSION['access'] as $value) {
-					if ($value != 'sup') {
+					if ($value != 'master') {
 						return false;
 					}
 				}
@@ -45,7 +44,7 @@
 
 			session_unset();
 			
-			if ( $redirect === true ) {
+			if ($redirect === true) {
 				$this->goto_login();
 			}
 
@@ -53,18 +52,18 @@
 
 		protected function goto_login() {
 
-			if ( defined( 'HOME_URI' ) ) {
+			if (defined('HOME_URI')) {
 
-				$login_uri  = HOME_URI . 'access/login';
-				header('location: ' . $login_uri);
+				$login_uri  = HOME_URI.'access/login';
+				header('location: '.$login_uri);
 
 			}
 
 		}
 
-		protected function goto_page( $page , $parameters = array()) {
+		protected function goto_page($page , $parameters = array()) {
 
-			if ( defined( 'HOME_URI' ) ) {
+			if (defined('HOME_URI')) {
 			
 				$login_uri  = HOME_URI . $page ;
 				header('location: ' . $login_uri);
@@ -73,9 +72,9 @@
 		
 		}
 
-		protected function check_permissions( ) {
+		protected function check_permissions() {
 
-			if ( ! $this->user_logged() ) {
+			if (!$this->user_logged()) {
 				
 				$this->goto_login();
 				die();
@@ -83,9 +82,9 @@
 
 			}
 
-			if ( ! $this->its_allowed( $this->access_required, $this->user_permissions ) ) {
+			if (!$this->its_allowed($this->access_required, $this->user_permissions)) {
 
-				$this->goto_page( 'usuario/home' );
+				$this->goto_page('access/home');
 				die();
 				return false;
 				
@@ -95,13 +94,13 @@
 
 		}
 
-		protected function its_allowed( $access_required, $user_permissions ){
+		protected function its_allowed($access_required, $user_permissions){
 
 			// Loop para verificar para verificar se o usuario possui o acesso necessario
-			foreach ( $access_required as $required ) {
+			foreach ($access_required as $required) {
 				
 				// Loop para verificar tadas as permissões que o usuario possui
-				if ( in_array( $required, $user_permissions ) ) {
+				if (in_array($required, $user_permissions)) {
 					
 					// Caso tenha dados match retorna true
 					return true;
@@ -117,11 +116,11 @@
 
 		protected function session_validation($session = array()){
 
-			$this->db->query("SELECT token_login FROM usuario WHERE (login = :login) "); 
-            $this->db->bind(':login', $_SESSION['login']);
+			$this->db->query("SELECT login_token FROM user.user_credentials WHERE uid_user = :uid_user");
+            $this->db->bind(':uid_user', $_SESSION['uid_user']);
             $row = $this->db->single();
 
-            if($row['token_login'] != $_SESSION['token_login']){
+            if($row['login_token'] != $_SESSION['login_token']){
                 session_unset();
                 return false;
             }
@@ -131,27 +130,27 @@
 				return false;
 			}
 
-			if ( ! isset( $session['uid_usuario'] ) || empty( $session['uid_usuario'] ) ){
+			if (!isset( $session['uid_user'] ) || empty( $session['uid_user'])){
 
 				return false;
 			}
 
-			if ( ! isset( $session['uid_empresa'] ) || empty( $session['uid_empresa'] ) ){
+			// if ( ! isset( $session['uid_empresa'] ) || empty( $session['uid_empresa'] ) ){
+
+			// 	return false;
+			// }
+
+			if (!isset( $session['login'] ) || empty( $session['login'])){
 
 				return false;
 			}
 
-			if ( ! isset( $session['login'] ) || empty( $session['login'] ) ){
 
-				return false;
-			}
+			$this->user_name = $session['name'];
 
+			$this->logged_token = $session['login_token'];
 
-			$this->user_name = $session['nome'];
-
-			$this->logged_token = $session['token_login'];
-
-			if ( isset($session['access']) && is_array($session['access']) ) {
+			if (isset($session['access']) && is_array($session['access'])) {
 
 				$this->user_permissions = $session['access']; 
 			
@@ -160,7 +159,7 @@
 				return false;
 			}
 
-			if ( isset($session['token_time']) && is_numeric($session['token_time']) ) {
+			if (isset($session['token_time']) && is_numeric($session['token_time'])) {
 
 				$this->logged_time = $session['token_time']; 
 			

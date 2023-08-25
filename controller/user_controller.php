@@ -6,8 +6,8 @@
 
 		public function home(){
 
-			$this->access_required = array('master');
-			$this->check_permissions();
+			// $this->access_required = array();
+			// $this->check_permissions();
 
 			require ABSPATH . '/view/include/template-header.php';
 			require ABSPATH . '/view/user/home.php';
@@ -53,16 +53,7 @@
       				$_SESSION['uid_user'] = $user['uid_user'];
       				$_SESSION['name'] = $user['name'];
       				$_SESSION['login'] = $user['login'];
-      				$_SESSION['access'] = array($userModel->select_access($_SESSION['uid_user'])['access']);
-      				$_SESSION['login_token'] = md5('seg'.bin2hex(random_bytes(5)));
-      				$_SESSION['token_time'] = time();
-
-      				try {
-      					$userModel->save_login_token($_SESSION['uid_user'], $_SESSION['login_token']);
-      				}catch (Exception $e){
-      					echo json_encode(Mensagem::catch($e));
-      				}
-
+      				$_SESSION['access'] = $userModel->select_access($_SESSION['uid_user'])['access'];
       				echo json_encode(array('error' => 0));
       			}
       		}

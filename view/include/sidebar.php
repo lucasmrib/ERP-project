@@ -7,35 +7,35 @@
 	</div>
 
 	<nav class="space-y-1 mt-10">
-		<div class="gap-2 bg-zinc-300 flex items-center rounded-lg p-2 mb-2">
+		<div class="gap-2 bg-zinc-300 flex items-center rounded-lg p-2 pl-3 mb-2">
 			<i class="bx bx-search mr-2 font-semibold"></i>
 			<input class="text-base bg-transparent w-full mr-2 font-semibold text-zinc-800 focus:outline-none" type="search" name="search" placeholder="Search..." autocomplete="off">
 		</div>
 
-		<a href="" class="flex items-center gap-4 p-2 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
+		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
 			<i class="bx bx-home"></i>
 			Home
 		</a>
-		<a href="" class="flex items-center gap-4 p-2 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
+		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
 			<i class="bx bx-bookmarks"></i>
 			Bookmarks
 		</a>
 	</nav>
 
 	<nav class="space-y-1 mt-3 py-3 border-t border-zinc-700 h-full overflow-y-auto">
-		<a href="" class="flex items-center gap-4 p-2 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
+		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
 			<i class="bx bx-bar-chart-alt-2"></i>
 			Analytics
 		</a>
-		<a href="" class="flex items-center gap-4 p-2 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
+		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
 			<i class="bx bx-image"></i>
 			Media
 		</a>
-		<a href="" class="flex items-center gap-4 p-2 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
+		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
 			<i class="bx bx-book-content"></i>
 			Projects
 		</a>
-		<a href="" class="flex items-center gap-4 p-2 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
+		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
 			<i class="bx bx-envelope"></i>
 			Inbox
 		</a>
@@ -43,11 +43,11 @@
 	
 	
 	<nav class="space-y-1 mt-3 pt-3 border-t border-zinc-700">
-		<a href="" class="flex items-center gap-4 p-2 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
+		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
 			<i class="bx bx-bar-chart-alt-2"></i>
 			Profile
 		</a>
-		<a href="" class="flex items-center gap-4 p-2 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
+		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
 			<i class="bx bx-cog"></i>
 			Settings
 		</a>
