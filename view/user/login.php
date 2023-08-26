@@ -34,7 +34,7 @@ $('#formlogin').on('submit', function(){
         if (req.erro == 1) {
             Swal.fire({title: req.title, icon: req.icone})
         }else{
-            window.location.href=url_home()+'access/home';
+            window.location.href=url_home()+'user/home';
         }
     }, 'json')
     return false

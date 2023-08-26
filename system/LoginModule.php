@@ -50,7 +50,7 @@
 
 			if ( ! $this->its_allowed_module( $this->access_required_module, $this->user_permissions_module ) ) {
 
-				$this->goto_page_module( 'access/home' );
+				$this->goto_page_module( 'user/home' );
 				die();
 				return false;
 				

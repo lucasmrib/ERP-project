@@ -1,4 +1,4 @@
-<aside class="sidebar relative flex flex-col justify-between max-h-screen min-h-screen left-0 p-5 pt-8 pb-3 w-72 bg-zinc-800">
+<aside class="sidebar relative flex flex-col justify-between max-h-screen min-h-screen left-0 p-5 pt-8 pb-3 w-72 bg-zinc-800 select-none">
 	
 	<!-- <i class="bx bx-chevron-left bx-sm rounded-full absolute -right-3 top-14 pt-0.5 pr-0.5 bg-zinc-300 cursor-pointer"></i> -->
 	<div class="inline-flex w-full pl-3 items-center">
@@ -16,41 +16,118 @@
 			<i class="bx bx-home"></i>
 			Home
 		</a>
-		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
-			<i class="bx bx-bookmarks"></i>
-			Bookmarks
-		</a>
 	</nav>
 
 	<nav class="space-y-1 mt-3 py-3 border-t border-zinc-700 h-full overflow-y-auto">
+
+		<div class="item rounded-lg transition-all duration-700">
+			<a class="has-submenu flex items-center justify-between py-2 px-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700 cursor-pointer">
+				<div class="flex items-center gap-4">
+					<i class="bx bx-folder-open"></i>
+					Records
+				</div>
+				<i class="bx bx-chevron-right"></i>
+			</a>
+			<ul class="space-y-1 pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
+				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
+					<a href="">Customers</a>
+				</li>
+				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
+					<a href="user/employees">Employees</a>
+				</li>
+				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
+					<a href="#">Suppliers</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="item rounded-lg transition-all duration-500">
+			<a class="has-submenu flex items-center justify-between py-2 px-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700 cursor-pointer">
+				<div class="flex items-center gap-4">
+					<i class="bx bx-dollar-circle"></i>
+					Finances
+				</div>
+				<i class="bx bx-chevron-right"></i>
+			</a>
+			<ul class="space-y-1 pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
+				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
+					<a href="#">Billing</a>
+				</li>
+				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
+					<a href="#">Generate Invoice</a>
+				</li>
+				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
+					<a href="#">A/P</a>
+				</li>
+				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
+					<a href="#">A/R</a>
+				</li>
+			</ul>
+		</div>
+
+		<div class="item rounded-lg transition-all duration-500">
+			<a class="has-submenu flex items-center justify-between py-2 px-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700 cursor-pointer">
+				<div class="flex items-center gap-4">
+					<i class="bx bx-bar-chart-alt-2"></i>
+					Analytics
+				</div>
+				<i class="bx bx-chevron-right"></i>
+			</a>
+			<ul class="space-y-1 pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
+				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
+					<a href="#">Graphs</a>
+				</li>
+				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
+					<a href="#">Reports</a>
+				</li>
+			</ul>
+		</div>
+
 		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
-			<i class="bx bx-bar-chart-alt-2"></i>
-			Analytics
+			<i class="bx bx-package"></i>
+			Storage
 		</a>
 		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
-			<i class="bx bx-image"></i>
-			Media
-		</a>
-		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
-			<i class="bx bx-book-content"></i>
-			Projects
-		</a>
-		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
-			<i class="bx bx-envelope"></i>
-			Inbox
+			<i class="bx bx-chat"></i>
+			Messages
 		</a>
 	</nav>
 	
 	
 	<nav class="space-y-1 mt-3 pt-3 border-t border-zinc-700">
 		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
-			<i class="bx bx-bar-chart-alt-2"></i>
+			<i class="bx bx-user"></i>
 			Profile
-		</a>
-		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
-			<i class="bx bx-cog"></i>
-			Settings
 		</a>
 	</nav>
 	
 </aside>
+
+<script type="text/javascript">
+
+	//Config to open/close submenus
+	$('.has-submenu').on('click', function(){
+		var button = $(this).parent()
+		var submenu = $(this).next()
+		var icon = $(this).children('i')
+
+		if(submenu.hasClass('hidden')){
+			//Only one submenu can be opened simultaneously
+			$('.item').removeClass('pb-3 bg-zinc-700')
+			$('ul').addClass('hidden')
+			$('.bx-chevron-down').addClass('bx-chevron-right')
+			$('.bx-chevron-down').removeClass('bx-chevron-down')
+
+			button.addClass('pb-3 bg-zinc-700')
+			submenu.removeClass('hidden')
+			icon.removeClass('bx-chevron-right')
+			icon.addClass('bx-chevron-down')
+		}else{
+			button.removeClass('pb-3 bg-zinc-700')
+			submenu.addClass('hidden')
+			icon.removeClass('bx-chevron-down')
+			icon.addClass('bx-chevron-right')
+		}
+	})
+
+</script>

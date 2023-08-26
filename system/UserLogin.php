@@ -84,7 +84,7 @@
 
 			if (!$this->its_allowed($this->access_required, $this->user_permissions)) {
 
-				$this->goto_page('access/home');
+				$this->goto_page('user/home');
 				die();
 				return false;
 				

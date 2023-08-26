@@ -4,28 +4,28 @@
 
 	class AccessController extends Controller{
 
-		public function home(){
-
-			$this->access_required = array('master');
-			$this->check_permissions();
-
-			require ABSPATH . '/view/include/template-header.php';
-			require ABSPATH . '/view/user/home.php';
-			require ABSPATH . '/view/include/template-footer.php';
-
-  		}
-
   		// Login page
   		public function login(){
 
-  			// if (isset($_SESSION['uid_user'])) {
-			// 	header("location: ".HOME_URI."access/home");
-			// 	die();
-			// }
+  			if (isset($_SESSION['uid_user'])) {
+				header("location: ".HOME_URI."user/home");
+				die();
+			}
 
 			require ABSPATH . '/view/include/template-header.php';
 			require ABSPATH . '/view/user/login.php';
 			require ABSPATH . '/view/include/template-footer.php';
+
+  		}
+
+  		// Logout funcion
+  		public function logoff(){
+
+  			session_unset();
+ 			session_destroy();
+
+  			header("location: ".HOME_URI."access/login");
+			die();
 
   		}
 
