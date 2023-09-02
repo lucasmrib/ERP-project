@@ -2,7 +2,7 @@
 <div class="h-screen w-full flex flex-col space-y-10 items-center justify-center pb-10">
 	<div class="flex flex-col items-center justify-center space-y-4">
 		<i class="bx bxs-dollar-circle text-8xl text-indigo-300 font-semibold"></i>
-		<h1 class="text-indigo-300 font-bold">NOME DA EMPRESA</h1>
+		<h1 class="text-indigo-300 font-bold">COMPANY'S NAME</h1>
 	</div>
 
 	<form id="formlogin" method="POST" class="space-y-3 bg-zinc-800 p-20 pb-5 rounded-lg shadow-black/70 shadow-lg">

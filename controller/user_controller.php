@@ -26,4 +26,18 @@
 
   		}
 
+  		public function employees(){
+
+			// $this->access_required = array();
+			// $this->check_permissions();
+
+			$userModel = $this->load_model('user_model');
+      		$employees = $userModel->employee_list();
+
+			require ABSPATH . '/view/include/template-header.php';
+			require ABSPATH . '/view/records/employee_list.php';
+			require ABSPATH . '/view/include/template-footer.php';
+
+  		}
+
  	}

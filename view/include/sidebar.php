@@ -3,7 +3,7 @@
 	<!-- <i class="bx bx-chevron-left bx-sm rounded-full absolute -right-3 top-14 pt-0.5 pr-0.5 bg-zinc-300 cursor-pointer"></i> -->
 	<div class="inline-flex w-full pl-3 items-center">
 		<i class="bx bx-dollar-circle bx-md bg-amber-300 rounded cursor-pointer block float-left mr-4"></i>
-		<h1 class="text-zinc-200 origin-left font-medium text-xl">EMPRESA</h1>
+		<h1 class="text-zinc-200 origin-left font-medium text-xl">COMPANY</h1>
 	</div>
 
 	<nav class="space-y-1 mt-10">
@@ -12,7 +12,7 @@
 			<input class="text-base bg-transparent w-full mr-2 font-semibold text-zinc-800 focus:outline-none" type="search" name="search" placeholder="Search..." autocomplete="off">
 		</div>
 
-		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
+		<a href="<?php echo HOME_URI.'user/home'; ?>" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
 			<i class="bx bx-home"></i>
 			Home
 		</a>
@@ -30,13 +30,13 @@
 			</a>
 			<ul class="space-y-1 pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
 				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
-					<a href="">Customers</a>
+					<a href="<?php echo HOME_URI.'user/employees'; ?>">Employees</a>
 				</li>
 				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
-					<a href="user/employees">Employees</a>
+					<a href="<?php echo HOME_URI.'user/customers'; ?>">Customers</a>
 				</li>
 				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
-					<a href="#">Suppliers</a>
+					<a href="<?php echo HOME_URI.'user/Suppliers'; ?>">Suppliers</a>
 				</li>
 			</ul>
 		</div>

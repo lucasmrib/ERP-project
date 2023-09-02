@@ -32,4 +32,9 @@
 			return $this->db->execute();
 		}
 
+		public function employee_list(){
+			$this->db->query("SELECT * FROM user.user_credentials");
+			return $this->db->resultset();
+		}
+
 	}
