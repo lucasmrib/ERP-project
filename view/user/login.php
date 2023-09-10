@@ -5,7 +5,7 @@
 		<h1 class="text-indigo-300 font-bold">COMPANY'S NAME</h1>
 	</div>
 
-	<form id="formlogin" method="POST" class="space-y-3 bg-zinc-800 p-20 pb-5 rounded-lg shadow-black/70 shadow-lg">
+	<form id="formLogin" method="POST" class="space-y-3 bg-zinc-800 p-20 pb-5 rounded-lg shadow-black/70 shadow-lg">
 		<div class="bg-zinc-300 flex items-center rounded-lg p-2 mb-2 hover:shadow-black hover:shadow-lg focus-within:shadow-black focus-within:shadow-lg duration-200">
 			<i class="bx bx-user mr-2 font-semibold"></i>
 			<input class="text-base bg-transparent w-full mr-2 font-semibold text-zinc-800 focus:outline-none" type="text" name="login" placeholder="Username" autocomplete="off">
@@ -14,7 +14,7 @@
 			<i class="bx bx-lock-alt mr-2 font-semibold"></i>
 			<input class="text-base bg-transparent w-full mr-2 font-semibold text-zinc-800 focus:outline-none" type="password" name="password" placeholder="Password" autocomplete="off">
 		</div>
-		<button type="submit" class="bg-indigo-500 hover:bg-indigo-400 hover:shadow-lg hover:shadow-black duration-200 w-full font-semibold rounded-lg p-2 mb-2">Login</button>
+		<button type="submit" class="bg-indigo-400 hover:bg-indigo-300 hover:shadow-lg hover:shadow-black duration-200 w-full font-semibold rounded-lg p-2 mb-2">Login</button>
 		<div class="pt-14 w-full flex justify-center">
 			<a href="" class="text-indigo-300 hover:text-indigo-100">Forgot your password?</a>
 		</div>
@@ -26,7 +26,7 @@
 
 <script type="text/javascript">
 
-$('#formlogin').on('submit', function(){
+$('#formLogin').on('submit', function(){
 
     swal_fire_carregando();
 

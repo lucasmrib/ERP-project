@@ -1,4 +1,4 @@
-<div class="h-screen w-full pl-20 pr-24 py-4">
+<div class="h-screen ml-60 w-full pl-20 pr-24 py-4">
 	<div class="flex justify-between items-center w-full h-12 mb-16">
 		<header class="ml-6">
 	    	<h1 class="text-3xl font-semibold tracking-tight text-zinc-200"><?php echo strtoupper(str_replace('_', ' ', $this->parameters[1])); ?></h1>

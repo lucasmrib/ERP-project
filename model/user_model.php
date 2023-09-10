@@ -33,7 +33,9 @@
 		}
 
 		public function employee_list(){
-			$this->db->query("SELECT * FROM user.user_credentials");
+			$this->db->query("SELECT * FROM user.user_credentials AS A
+				LEFT JOIN user.user_permissions AS B
+				ON A.uid_user = B.uid_user");
 			return $this->db->resultset();
 		}
 

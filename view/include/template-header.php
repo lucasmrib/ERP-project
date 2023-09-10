@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="<?php echo HOME_URI."view/js/sweetalert2/dark.css"; ?>">
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 	<link rel="stylesheet" href="<?php echo HOME_URI."view/assets/css/datatable-theme.css"; ?>">
+	<link rel="stylesheet" href="<?php echo HOME_URI."view/assets/css/stylesheet.css"; ?>">
 
 	<!---------======== BoxIcons CSS ========--------->
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -19,7 +20,7 @@
 	<script src="<?php echo HOME_URI."view/js/functions.js"; ?>"></script>
 	<script src="<?php echo HOME_URI."view/js/sweetalert2/sweetalert2.min.js"; ?>"></script>
 
-	<title>Website</title>
+	<title>ERP System</title>
 </head>
 <body class="bg-zinc-700 flex">
 	<?php if(isset($_GET['path']) && !str_contains($_GET['path'], 'access/login')){ 

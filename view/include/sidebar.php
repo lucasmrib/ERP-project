@@ -1,4 +1,4 @@
-<aside class="sidebar relative flex flex-col justify-between max-h-screen min-h-screen left-0 p-5 pt-8 pb-3 w-72 bg-zinc-800 select-none">
+<aside class="sidebar fixed flex flex-col justify-between h-screen left-0 p-5 pt-8 pb-3 w-60 bg-zinc-800 select-none">
 	
 	<!-- <i class="bx bx-chevron-left bx-sm rounded-full absolute -right-3 top-14 pt-0.5 pr-0.5 bg-zinc-300 cursor-pointer"></i> -->
 	<div class="inline-flex w-full pl-3 items-center">
@@ -29,15 +29,15 @@
 				<i class="bx bx-chevron-right"></i>
 			</a>
 			<ul class="space-y-1 pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
-				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
-					<a href="<?php echo HOME_URI.'user/employees'; ?>">Employees</a>
-				</li>
-				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
-					<a href="<?php echo HOME_URI.'user/customers'; ?>">Customers</a>
-				</li>
-				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
-					<a href="<?php echo HOME_URI.'user/Suppliers'; ?>">Suppliers</a>
-				</li>
+				<a href="<?php echo HOME_URI.'records/employees'; ?>">
+					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Employees</li>
+				</a>
+				<a href="<?php echo HOME_URI.'records/customers'; ?>">
+					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Customers</li>
+				</a>
+				<a href="<?php echo HOME_URI.'records/Suppliers'; ?>">
+					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Suppliers</li>
+				</a>
 			</ul>
 		</div>
 
@@ -50,18 +50,18 @@
 				<i class="bx bx-chevron-right"></i>
 			</a>
 			<ul class="space-y-1 pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
-				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
-					<a href="#">Billing</a>
-				</li>
-				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
-					<a href="#">Generate Invoice</a>
-				</li>
-				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
-					<a href="#">A/P</a>
-				</li>
-				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
-					<a href="#">A/R</a>
-				</li>
+				<a href="#">
+					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Billing</li>
+				</a>
+				<a href="#">
+					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Generate Invoice</li>
+				</a>
+				<a href="#">
+					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">A/P</li>
+				</a>
+				<a href="#">
+					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">A/R</li>
+				</a>
 			</ul>
 		</div>
 
@@ -74,12 +74,12 @@
 				<i class="bx bx-chevron-right"></i>
 			</a>
 			<ul class="space-y-1 pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
-				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
-					<a href="#">Graphs</a>
-				</li>
-				<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">
-					<a href="#">Reports</a>
-				</li>
+				<a href="#">
+					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Graphs</li>
+				</a>
+				<a href="#">
+					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Reports</li>
+				</a>
 			</ul>
 		</div>
 

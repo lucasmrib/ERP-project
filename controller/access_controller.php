@@ -45,6 +45,10 @@
       				echo json_encode(Message::error('wrong-login'));
       				die();
 
+      			}else if(!$user['status']){
+      				echo json_encode(Message::error('wrong-login'));
+      				die();
+
       			}else if(!password_verify($_POST['password'], $user['password'])){
       				echo json_encode(Message::error('wrong-password'));
       				die();
