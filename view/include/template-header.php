@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="<?php echo HOME_URI."view/js/sweetalert2/dark.css"; ?>">
 	<link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
 	<link rel="stylesheet" href="<?php echo HOME_URI."view/assets/css/datatable-theme.css"; ?>">
+	<link rel="stylesheet" href="<?php echo HOME_URI."view/assets/css/stylesheet.css"; ?>">
 
 	<!---------======== BoxIcons CSS ========--------->
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>

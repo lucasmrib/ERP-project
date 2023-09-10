@@ -16,7 +16,7 @@
 				break;
 
 				case 'wrong-login':
-					return array('title' => 'The username you entered does not exist!', 'icone' => 'error', 'erro' => 1);
+					return array('title' => 'Invalid user!', 'icone' => 'error', 'erro' => 1);
 				break;
 
 				case 'wrong-password':

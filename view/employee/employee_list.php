@@ -1,9 +1,17 @@
+<div class="flex justify-end font-semibold">
+    <a href="<?php echo HOME_URI.'records/register_employee'; ?>" class="flex items-center justify-center bg-indigo-400 hover:bg-indigo-300 w-36 rounded-lg p-1.5 mb-2 mr-4 ring-1 ring-indigo-500">
+        <i class="bx bx-plus"></i>
+        New
+    </a>
+</div>
+
 <div class="bg-zinc-800 p-4 rounded-lg text-zinc-300">
-    <table id="table" class="table stripe py-4">
+    <table id="table" class="table stripe hover py-4">
         <thead>
             <tr>
                 <th>Name</th>
                 <th>Login</th>
+                <th>Access</th>
                 <th>Status</th>
                 <th class="dt-body-right" style="max-width: 50px;">Actions</th>
             </tr>
@@ -13,6 +21,7 @@
                 <tr>
                     <td><?php echo $value['name']; ?></td>
                     <td><?php echo $value['login']; ?></td>
+                    <td><?php echo $value['access']; ?></td>
                     <td>
                         <?php switch($value['status']){
                             case 1:
