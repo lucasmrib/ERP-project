@@ -21,3 +21,4 @@ jobs:
         SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         SSH_PASSPHRASE: ${{ secrets.PASSPHRASE }}
         ARGS: "-rltgoDzvO --delete"
+        SOURCE: "ERP-project/"
