@@ -22,4 +22,4 @@ jobs:
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
           cd ../var/www/html/ERP
-          git pull
+          git pull origin main
