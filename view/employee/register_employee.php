@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <div class="flex justify-start font-semibold pb-2">
     <a href="<?php echo HOME_URI.'records/employees'; ?>" class="flex items-center justify-center bg-zinc-500 hover:bg-zinc-400 w-36 rounded-lg p-1.5 mb-2 ml-4 ring-1 ring-zinc-600 gap-2">
     	<i class="bx bx-arrow-back"></i>
@@ -6,8 +5,6 @@
     </a>
 </div>
 
-=======
->>>>>>> 7a36b7a1337e09cf0da525d7ad9ba964011b63c5
 <form id="formEmployee" method="POST" class="space-y-4 pb-12">
 
 	<div class="flex-col items-center bg-zinc-800 p-10 rounded-lg">
@@ -69,7 +66,7 @@
 				<div class="inline-flex w-full gap-1">
 					<div class="relative w-10 mr-2 select-none">
 					    <input type="checkbox" name="finance" id="finance" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
-					    <label for="adm" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
+					    <label for="finance" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
 					</div>
 					<label class="font-semibold text-zinc-300">Finance</label>
 				</div>
@@ -87,19 +84,6 @@
 				<div class="grid grid-cols-3">
 
 					<div class="col-span-1 space-y-1">
-<<<<<<< HEAD
-						<div class="inline-flex w-full gap-1">
-							<div class="relative w-10 mr-2 select-none">
-							    <input type="checkbox" name="" id="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
-							    <label for="" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
-=======
-						<div class="inline-flex w-full">
-							<div class="relative w-10 mr-2 select-none">
-							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
-							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
-							</div>
-							<label class="font-semibold text-zinc-300">Status</label>
-						</div>
 						<div class="inline-flex w-full gap-1">
 							<div class="relative w-10 mr-2 select-none">
 							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
@@ -125,7 +109,13 @@
 							<div class="relative w-10 mr-2 select-none">
 							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
 							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
->>>>>>> 7a36b7a1337e09cf0da525d7ad9ba964011b63c5
+							</div>
+							<label class="font-semibold text-zinc-300">Status</label>
+						</div>
+						<div class="inline-flex w-full gap-1">
+							<div class="relative w-10 mr-2 select-none">
+							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
+							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
 							</div>
 							<label class="font-semibold text-zinc-300">Status</label>
 						</div>
@@ -133,10 +123,43 @@
 					<div class="col-span-1 space-y-1">
 						<div class="inline-flex w-full gap-1">
 							<div class="relative w-10 mr-2 select-none">
-<<<<<<< HEAD
-							    <input type="checkbox" name="" id="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
-							    <label for="" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
-=======
+							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
+							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
+							</div>
+							<label class="font-semibold text-zinc-300">Status</label>
+						</div>
+						<div class="inline-flex w-full gap-1">
+							<div class="relative w-10 mr-2 select-none">
+							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
+							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
+							</div>
+							<label class="font-semibold text-zinc-300">Status</label>
+						</div>
+						<div class="inline-flex w-full gap-1">
+							<div class="relative w-10 mr-2 select-none">
+							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
+							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
+							</div>
+							<label class="font-semibold text-zinc-300">Status</label>
+						</div>
+						<div class="inline-flex w-full gap-1">
+							<div class="relative w-10 mr-2 select-none">
+							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
+							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
+							</div>
+							<label class="font-semibold text-zinc-300">Status</label>
+						</div>
+						<div class="inline-flex w-full gap-1">
+							<div class="relative w-10 mr-2 select-none">
+							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
+							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
+							</div>
+							<label class="font-semibold text-zinc-300">Status</label>
+						</div>
+					</div>
+					<div class="col-span-1 space-y-1">
+						<div class="inline-flex w-full gap-1">
+							<div class="relative w-10 mr-2 select-none">
 							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
 							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
 							</div>
@@ -167,49 +190,6 @@
 							<div class="relative w-10 mr-2 select-none">
 							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
 							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
->>>>>>> 7a36b7a1337e09cf0da525d7ad9ba964011b63c5
-							</div>
-							<label class="font-semibold text-zinc-300">Status</label>
-						</div>
-					</div>
-					<div class="col-span-1 space-y-1">
-						<div class="inline-flex w-full gap-1">
-							<div class="relative w-10 mr-2 select-none">
-<<<<<<< HEAD
-							    <input type="checkbox" name="" id="" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
-							    <label for="" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
-=======
-							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
-							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
-							</div>
-							<label class="font-semibold text-zinc-300">Status</label>
-						</div>
-						<div class="inline-flex w-full gap-1">
-							<div class="relative w-10 mr-2 select-none">
-							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
-							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
-							</div>
-							<label class="font-semibold text-zinc-300">Status</label>
-						</div>
-						<div class="inline-flex w-full gap-1">
-							<div class="relative w-10 mr-2 select-none">
-							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
-							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
-							</div>
-							<label class="font-semibold text-zinc-300">Status</label>
-						</div>
-						<div class="inline-flex w-full gap-1">
-							<div class="relative w-10 mr-2 select-none">
-							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
-							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
-							</div>
-							<label class="font-semibold text-zinc-300">Status</label>
-						</div>
-						<div class="inline-flex w-full gap-1">
-							<div class="relative w-10 mr-2 select-none">
-							    <input type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in">
-							    <label for="toggle" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
->>>>>>> 7a36b7a1337e09cf0da525d7ad9ba964011b63c5
 							</div>
 							<label class="font-semibold text-zinc-300">Status</label>
 						</div>
@@ -220,18 +200,14 @@
 	</div>
 
 	<div class="flex justify-end font-semibold pt-2">
-<<<<<<< HEAD
-=======
 		<a class="flex items-center justify-center bg-zinc-500 hover:bg-zinc-400 w-36 rounded-lg p-1.5 mb-2 mr-4 ring-1 ring-zinc-600 cursor-pointer">
 	        Return
 	    </a>
->>>>>>> 7a36b7a1337e09cf0da525d7ad9ba964011b63c5
 	    <button class="flex items-center justify-center bg-indigo-400 hover:bg-indigo-300 w-36 rounded-lg p-1.5 mb-2 mr-4 ring-1 ring-indigo-500" name="submit" type="">
 	        Submit
 	    </button>
 	</div>
 
-<<<<<<< HEAD
 </form>
 
 <script type="text/javascript">
@@ -239,6 +215,3 @@
 
 
 </script>
-=======
-</form>
->>>>>>> 7a36b7a1337e09cf0da525d7ad9ba964011b63c5
