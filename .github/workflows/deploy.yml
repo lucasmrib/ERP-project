@@ -21,5 +21,5 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         passphrase: ${{ secrets.PASSPHRASE }}
         script: |
-          cd ../var/www/html
+          cd ../var/www/html/ERP
           git pull
