@@ -28,11 +28,11 @@
 
 $('#formLogin').on('submit', function(){
 
-    swal_fire_carregando();
+    swal_fire_loading();
 
-    $.post(url_home()+'access/access', $(this).serialize(), function(req){
-        if (req.erro == 1) {
-            Swal.fire({title: req.title, icon: req.icone})
+    $.post(url_home()+'access/access', $(this).serialize(), function(res){
+        if (res.error == 1) {
+            Swal.fire({title: res.title, icon: res.icone})
         }else{
             window.location.href=url_home()+'user/home';
         }

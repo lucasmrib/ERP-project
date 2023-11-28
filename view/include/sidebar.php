@@ -28,15 +28,15 @@
 				</div>
 				<i class="bx bx-chevron-right"></i>
 			</a>
-			<ul class="space-y-1 pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
+			<ul class="pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
 				<a href="<?php echo HOME_URI.'records/employees'; ?>">
-					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Employees</li>
+					<li class="pl-3 py-1 rounded-lg hover:bg-zinc-800 cursor-pointer">Employees</li>
 				</a>
 				<a href="<?php echo HOME_URI.'records/customers'; ?>">
-					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Customers</li>
+					<li class="pl-3 py-1 rounded-lg hover:bg-zinc-800 cursor-pointer">Customers</li>
 				</a>
 				<a href="<?php echo HOME_URI.'records/Suppliers'; ?>">
-					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Suppliers</li>
+					<li class="pl-3 py-2 rounded-lg hover:bg-zinc-800 cursor-pointer">Suppliers</li>
 				</a>
 			</ul>
 		</div>
@@ -49,18 +49,18 @@
 				</div>
 				<i class="bx bx-chevron-right"></i>
 			</a>
-			<ul class="space-y-1 pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
+			<ul class="pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
 				<a href="#">
-					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Billing</li>
+					<li class="pl-3 py-1 rounded-lg hover:bg-zinc-800 cursor-pointer">Billing</li>
 				</a>
 				<a href="#">
-					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Generate Invoice</li>
+					<li class="pl-3 py-1 rounded-lg hover:bg-zinc-800 cursor-pointer">Generate Invoice</li>
 				</a>
 				<a href="#">
-					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">A/P</li>
+					<li class="pl-3 py-1 rounded-lg hover:bg-zinc-800 cursor-pointer">A/P</li>
 				</a>
 				<a href="#">
-					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">A/R</li>
+					<li class="pl-3 py-1 rounded-lg hover:bg-zinc-800 cursor-pointer">A/R</li>
 				</a>
 			</ul>
 		</div>
@@ -73,12 +73,12 @@
 				</div>
 				<i class="bx bx-chevron-right"></i>
 			</a>
-			<ul class="space-y-1 pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
+			<ul class="pl-8 mr-4 font-semibold text-zinc-300 hidden transition-all duration-700">
 				<a href="#">
-					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Graphs</li>
+					<li class="pl-3 py-1 rounded-lg hover:bg-zinc-800 cursor-pointer">Graphs</li>
 				</a>
 				<a href="#">
-					<li class="pl-3 rounded-lg hover:bg-zinc-800 cursor-pointer">Reports</li>
+					<li class="pl-3 py-1 rounded-lg hover:bg-zinc-800 cursor-pointer">Reports</li>
 				</a>
 			</ul>
 		</div>

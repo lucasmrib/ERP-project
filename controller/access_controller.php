@@ -64,7 +64,7 @@
       				try {
       					$userModel->save_login_token($_SESSION['uid_user'], $_SESSION['login_token']);
       				}catch (Exception $e){
-      					echo json_encode(Mensagem::catch($e));
+      					echo json_encode(Message::catch($e));
       				}
 
       				echo json_encode(array('error' => 0));

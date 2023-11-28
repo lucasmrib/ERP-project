@@ -11,6 +11,6 @@ function url_id() {
 	return url_id;
 }
 
-function swal_fire_carregando(){
+function swal_fire_loading(){
     Swal.fire({title: 'Aguarde...',imageUrl: url_home()+'/view/assets/img/loading-gif-transparent.gif',imageWidth: 80, imageHeight: 80, showConfirmButton: false , allowOutsideClick: false});
 }
