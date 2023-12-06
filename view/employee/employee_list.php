@@ -1,11 +1,11 @@
 <div class="flex justify-end font-semibold pb-2">
-    <a href="<?php echo HOME_URI.'records/register_employee'; ?>" class="flex items-center justify-center bg-indigo-400 hover:bg-indigo-300 w-36 rounded-lg p-1.5 mb-2 mr-4 ring-1 ring-indigo-500 gap-2">
+    <a href="<?php echo HOME_URI.'records/register_employee'; ?>" class="flex items-center justify-center bg-indigo-400 hover:bg-indigo-300 w-36 rounded-lg p-1.5 mb-2 ring-1 ring-indigo-500 gap-2">
         <i class="bx bx-plus"></i>
         New
     </a>
 </div>
 
-<div class="bg-zinc-800 p-4 rounded-lg text-zinc-300">
+<div class="bg-zinc-800 p-8 rounded-lg text-zinc-300">
     <table id="table" class="table stripe hover py-4">
         <thead>
             <tr>

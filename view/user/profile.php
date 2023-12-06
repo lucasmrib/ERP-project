@@ -25,7 +25,7 @@
 				<div class="col-span-1 space-y-2">
 					<label class="font-semibold text-zinc-300">Status</label>
 					<div class="relative w-10 mr-2 select-none">
-					    <input type="checkbox" value="<?php echo $employee['status']; ?>" name="status" id="status" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in"
+					    <input type="checkbox" name="status" id="status" class="toggle-checkbox absolute block w-6 h-6 rounded-full bg-white border-4 appearance-none cursor-pointer transition duration-900 ease-in"
 					    onchange="$(this).val(this.checked? '1': '0');"
 					    <?php echo $employee['status'] ? 'checked' : '' ?>>
 					    <label for="status" class="toggle-label block overflow-hidden h-6 rounded-full bg-zinc-300 cursor-pointer"></label>
@@ -96,7 +96,7 @@
 						<label class="font-semibold text-zinc-300">User</label>
 					</div>
 				</div>
-				<!-- <div class="col-span-4 space-y-2">
+				<div class="col-span-4 space-y-2">
 					<h1 class="font-bold text-xl text-zinc-300 pl-6 mb-6">Modules</h1>
 
 					<div class="grid grid-cols-3">
@@ -213,7 +213,7 @@
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 			</div>
 			<div class="flex font-semibold pt-10">
 			    <button class="flex items-center justify-center bg-indigo-400 hover:bg-indigo-300 w-full rounded-lg p-1.5 ring-1 ring-indigo-500" name="submit" type="submit">
@@ -229,18 +229,25 @@
 		<div class="flex-col items-center bg-zinc-800 p-16 rounded-lg">
 			<h1 class="font-bold text-xl text-zinc-300 pl-6 mb-6">Password Change</h1>
 			<div class="grid grid-cols-12 gap-6">
-				<div class="col-span-6 space-y-1">
+				<div class="col-span-4 space-y-1">
+					<label class="font-semibold text-zinc-300">Old Password</label>
+					<div class="gap-2 bg-zinc-300 flex items-center rounded-lg p-1 px-3">
+						<input class="text-base bg-transparent w-full font-semibold text-zinc-800 focus:outline-none" type="password" name="old_password" id="old_password" autocomplete="off">
+						<i class="bx bx-show font-semibold cursor-pointer"></i>
+					</div>
+				</div>
+				<div class="col-span-4 space-y-1">
 					<label class="font-semibold text-zinc-300">Type new password</label>
 					<div class="gap-2 bg-zinc-300 flex items-center rounded-lg p-1 px-3">
 						<input class="text-base bg-transparent w-full font-semibold text-zinc-800 focus:outline-none" type="password" name="new_password" id="new_password" autocomplete="off">
-						<i class="bx bx-show font-semibold cursor-pointer" id="show_new_password"></i>
+						<i class="bx bx-show font-semibold cursor-pointer"></i>
 					</div>
 				</div>
-				<div class="col-span-6 space-y-1">
+				<div class="col-span-4 space-y-1">
 					<label class="font-semibold text-zinc-300">Confirm new password</label>
 					<div class="gap-2 bg-zinc-300 flex items-center rounded-lg p-1 px-3">
 						<input class="text-base bg-transparent w-full font-semibold text-zinc-800 focus:outline-none" type="password" name="password_confirmation" id="password_confirmation" autocomplete="off">
-						<i class="bx bx-show font-semibold cursor-pointer" id="show_password_confirmation"></i>
+						<i class="bx bx-show font-semibold cursor-pointer"></i>
 					</div>
 				</div>
 			</div>
@@ -288,26 +295,7 @@ $('#user').on('change', function() {
 	}
 })
 
-//Show password when clicking on icon
-$('#show_new_password').on('click', function() {
-	if($('#new_password').attr("type") == "password") {
-		$('#new_password').attr("type", "text")
-		$('#new_password').focus()
-	}else{
-		$('#new_password').attr("type", "password")
-		$('#new_password').focus()
-	}
-})
 
-$('#show_password_confirmation').on('click', function() {
-	if($('#password_confirmation').attr("type") == "password") {
-		$('#password_confirmation').attr("type", "text")
-		$('#password_confirmation').focus()
-	}else{
-		$('#password_confirmation').attr("type", "password")
-		$('#password_confirmation').focus()
-	}
-})
 
 //form submition for the employee creation
 $('#formCredentials').on('submit', function() {
@@ -337,9 +325,9 @@ $('#formPassword').on('submit', function() {
 	swal_fire_loading()
 
 	$.post(url_home()+'records/update_password', $(this).serialize(), function(res) {
-		$('#old_password').val('')
-		$('#new_password').val('')
-		$('#password_confirmation').val('')
+		$('#old_password').val()
+		$('#new_password').val()
+		$('#password_confirmation').val()
         Swal.fire({title: res.title, icon: res.icone})
 	}, 'json')
 	return false

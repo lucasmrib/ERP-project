@@ -72,6 +72,7 @@
       		}
   		}
 
+  		//Test function to show session data
   		public function session(){
   			echo json_encode($_SESSION);
   			die();

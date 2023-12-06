@@ -1,5 +1,5 @@
 <div class="flex justify-start font-semibold pb-2">
-    <a href="<?php echo HOME_URI.'records/employees'; ?>" class="flex items-center justify-center bg-zinc-400 hover:bg-zinc-300 w-36 rounded-lg p-1.5 mb-2 ml-4 ring-1 ring-zinc-500 gap-2">
+    <a href="<?php echo HOME_URI.'records/employees'; ?>" class="flex items-center justify-center bg-zinc-400 hover:bg-zinc-300 w-36 rounded-lg p-1.5 mb-2 ring-1 ring-zinc-500 gap-2">
     	<i class="bx bx-arrow-back"></i>
         Return
     </a>
@@ -7,7 +7,7 @@
 
 <form id="formEmployee" method="POST" class="space-y-4">
 
-	<div class="flex-col items-center bg-zinc-800 p-10 rounded-lg">
+	<div class="flex-col items-center bg-zinc-800 p-16 rounded-lg">
 		<h1 class="font-bold text-xl text-zinc-300 pl-6 mb-6">User Credentials</h1>
 		<div class="grid grid-cols-12 gap-6">
 			<div class="col-span-5 space-y-1">
@@ -46,7 +46,7 @@
 		</div>
 	</div>
 
-	<div class="flex-col items-center bg-zinc-800 p-10 rounded-lg">
+	<div class="flex-col items-center bg-zinc-800 p-16 rounded-lg">
 		<div class="grid grid-cols-6 gap-6">
 			<div class="col-span-2 space-y-2">
 				<h1 class="font-bold text-xl text-zinc-300 pl-6 mb-6">Access</h1>
@@ -200,8 +200,8 @@
 		</div>
 	</div>
 
-	<div class="flex justify-end font-semibold pt-2">
-	    <button class="flex items-center justify-center bg-indigo-400 hover:bg-indigo-300 w-36 rounded-lg p-1.5 mr-4 ring-1 ring-indigo-500" name="submit" type="submit">
+	<div class="flex font-semibold pt-2">
+	    <button class="flex items-center justify-center bg-indigo-400 hover:bg-indigo-300 w-full rounded-lg p-1.5 ring-1 ring-indigo-500" name="submit" type="submit">
 	        Submit
 	    </button>
 	</div>

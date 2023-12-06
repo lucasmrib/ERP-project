@@ -1,4 +1,4 @@
-<aside class="sidebar fixed flex flex-col justify-between h-screen left-0 p-5 pt-8 pb-3 w-60 bg-zinc-800 select-none">
+<aside class="sidebar fixed flex flex-col justify-between h-screen top-0 left-0 p-5 pt-8 pb-3 w-60 bg-zinc-800 select-none">
 	
 	<!-- <i class="bx bx-chevron-left bx-sm rounded-full absolute -right-3 top-14 pt-0.5 pr-0.5 bg-zinc-300 cursor-pointer"></i> -->
 	<div class="inline-flex w-full pl-3 items-center">
@@ -95,7 +95,7 @@
 	
 	
 	<nav class="space-y-1 mt-3 pt-3 border-t border-zinc-700">
-		<a href="" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
+		<a href="<?php echo HOME_URI.'user/profile/'.$_SESSION['uid_user'] ?>" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
 			<i class="bx bx-user"></i>
 			Profile
 		</a>

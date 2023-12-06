@@ -15,6 +15,10 @@
 					return array('title' => 'Record deleted successfully', 'icone' => 'success', 'error' => 0);
 				break;
 
+				case 'update':
+					return array('title' => 'Data updated successfully', 'icone' => 'success', 'error' => 0);
+				break;
+
 				case 'status':
 					return array('title' => 'Status changed successfully', 'icone' => 'success', 'error' => 0);
 				break;
@@ -34,6 +38,10 @@
 
 				case 'wrong-password':
 					return array('title' => 'Incorrect password, try again.', 'icone' => 'error', 'error' => 1);
+				break;
+
+				case 'password-confirmation':
+					return array('title' => 'Passwords do not match!', 'icone' => 'error', 'error' => 1);
 				break;
 			}
 		}
