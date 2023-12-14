@@ -165,4 +165,19 @@
 
   		}
 
+  		//Employee list screen
+  		public function customers(){
+
+			// $this->access_required = array();
+			// $this->check_permissions();
+
+			$customerModel = $this->load_model('customer_model');
+      		$customers = $customerModel->customer_list();
+
+			require ABSPATH . '/view/include/template-header.php';
+			require ABSPATH . '/view/customer/customer_list.php';
+			require ABSPATH . '/view/include/template-footer.php';
+
+  		}
+
  	}

@@ -12,9 +12,9 @@
 			<input class="text-base bg-transparent w-full mr-2 font-semibold text-zinc-800 focus:outline-none" type="search" name="search" placeholder="Search..." autocomplete="off">
 		</div>
 
-		<a href="<?php echo HOME_URI.'user/home'; ?>" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
+		<a href="<?php echo HOME_URI.'user/dashboard'; ?>" class="flex items-center gap-4 p-2 pl-3 rounded-lg font-semibold text-zinc-300 hover:bg-zinc-700">
 			<i class="bx bx-home"></i>
-			Home
+			Dashboard
 		</a>
 	</nav>
 

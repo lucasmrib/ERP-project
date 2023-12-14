@@ -8,7 +8,7 @@
   		public function login(){
 
   			if (isset($_SESSION['uid_user'])) {
-				header("location: ".HOME_URI."user/home");
+				header("location: ".HOME_URI."user/dashboard");
 				die();
 			}
 

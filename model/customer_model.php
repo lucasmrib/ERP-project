@@ -2,7 +2,7 @@
 
 if ( ! defined ('ABSPATH') ) exit("Error 403");
 
-class Employee{
+class Customer{
 
 	public $db;
 	public $controller;
@@ -13,14 +13,14 @@ class Employee{
 		$this->controller = $controller;
 	}
 
-	public function employee_list(){
+	public function customer_list(){
 		$this->db->query("SELECT *, A.uid_user FROM ".DB_NAME.".user_credentials AS A
 			LEFT JOIN ".DB_NAME.".user_permissions AS B
 			ON A.uid_user = B.uid_user");
 		return $this->db->resultset();
 	}
 
-	public function create_employee($uid_user, $name, $login, $password, $status, $cpf, $email, $phone, $access){
+	public function create_customer($uid_user, $name, $login, $password, $status, $cpf, $email, $phone, $access){
 		$this->db->query("INSERT INTO ".DB_NAME.".user_credentials (uid_user, name, login, password, status, cpf, email, phone) VALUES (:uid_user, :name, :login, :password, :status, :cpf, :email, :phone)");
 		$this->db->bind(':uid_user', $uid_user);
 		$this->db->bind(':name', $name);
@@ -38,7 +38,7 @@ class Employee{
 		$this->db->execute();
 	}
 
-	public function delete_employee($uid_user){
+	public function delete_customer($uid_user){
 		$this->db->query("DELETE FROM ".DB_NAME.".user_credentials WHERE uid_user = :uid_user");
 		$this->db->bind(':uid_user', $uid_user);
 		$this->db->execute();
@@ -54,7 +54,7 @@ class Employee{
 		$this->db->execute();
 	}
 
-	public function update_credentials($uid_user, $name, $login, $status, $cpf, $email, $phone){
+	public function update_customer($uid_user, $name, $login, $status, $cpf, $email, $phone){
 		$this->db->query("UPDATE ".DB_NAME.".user_credentials SET name = :name, login = :login, status = :status, cpf = :cpf, email = :email, phone = :phone WHERE uid_user = :uid_user");
 		$this->db->bind(':uid_user', $uid_user);
 		$this->db->bind(':name', $name);
@@ -66,21 +66,7 @@ class Employee{
 		$this->db->execute();
 	}
 
-	public function update_access($uid_user, $access){
-		$this->db->query("UPDATE ".DB_NAME.".user_permissions SET access = :access WHERE uid_user = :uid_user");
-		$this->db->bind(':uid_user', $uid_user);
-		$this->db->bind(':access', $access);
-		$this->db->execute();
-	}
-
-	public function update_password($uid_user, $new_password){
-		$this->db->query("UPDATE ".DB_NAME.".user_credentials SET password = :new_password WHERE uid_user = :uid_user");
-		$this->db->bind(':uid_user', $uid_user);
-		$this->db->bind(':new_password', $new_password);
-		$this->db->execute();
-	}
-
-	public function display_employee($uid_user){
+	public function display_customer($uid_user){
 		$this->db->query("SELECT *, A.uid_user FROM ".DB_NAME.".user_credentials AS A
 			LEFT JOIN ".DB_NAME.".user_permissions AS B
 			ON A.uid_user = B.uid_user

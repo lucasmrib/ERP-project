@@ -84,7 +84,7 @@
 
 			if (!$this->its_allowed($this->access_required, $this->user_permissions)) {
 
-				$this->goto_page('user/home');
+				$this->goto_page('user/dashboard');
 				die();
 				return false;
 				
@@ -116,7 +116,7 @@
 
 		protected function session_validation($session = array()){
 
-			$this->db->query("SELECT login_token FROM user.user_credentials WHERE uid_user = :uid_user");
+			$this->db->query("SELECT login_token FROM ".DB_NAME.".user_credentials WHERE uid_user = :uid_user");
             $this->db->bind(':uid_user', $_SESSION['uid_user']);
             $row = $this->db->single();
 

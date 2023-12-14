@@ -1,10 +1,10 @@
 <?php
-	// Evita que usuários acessem este arquivo diretamente
+	//Avoid users to access this file directly
 	if (!defined('ABSPATH')) die();
 	
 	session_start();
 	 
-	// Verifica o modo para debugar
+	//Verify debug mode
 	if ( ! defined('DEBUG') || DEBUG === false ) {
 	 
 		// Esconde todos os erros
@@ -19,10 +19,10 @@
 		
 	}
 	 
-	// Funções globais
+	//Global functions
 	require_once ABSPATH . '/functions/global_functions.php';
 	 
-	// Carrega a aplicação
+	//Load the aplication
 	$router = new Router();
 
 ?>

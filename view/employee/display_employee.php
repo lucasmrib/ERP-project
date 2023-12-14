@@ -232,14 +232,14 @@
 				<div class="col-span-6 space-y-1">
 					<label class="font-semibold text-zinc-300">Type new password</label>
 					<div class="gap-2 bg-zinc-300 flex items-center rounded-lg p-1 px-3">
-						<input class="text-base bg-transparent w-full font-semibold text-zinc-800 focus:outline-none" type="password" name="new_password" id="new_password" autocomplete="off">
+						<input class="text-base bg-transparent w-full font-semibold text-zinc-800 focus:outline-none" type="password" name="new_password" id="new_password" autocomplete="off" required>
 						<i class="bx bx-show font-semibold cursor-pointer" id="show_new_password"></i>
 					</div>
 				</div>
 				<div class="col-span-6 space-y-1">
 					<label class="font-semibold text-zinc-300">Confirm new password</label>
 					<div class="gap-2 bg-zinc-300 flex items-center rounded-lg p-1 px-3">
-						<input class="text-base bg-transparent w-full font-semibold text-zinc-800 focus:outline-none" type="password" name="password_confirmation" id="password_confirmation" autocomplete="off">
+						<input class="text-base bg-transparent w-full font-semibold text-zinc-800 focus:outline-none" type="password" name="password_confirmation" id="password_confirmation" autocomplete="off" required>
 						<i class="bx bx-show font-semibold cursor-pointer" id="show_password_confirmation"></i>
 					</div>
 				</div>

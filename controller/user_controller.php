@@ -5,7 +5,7 @@
 	class UserController extends Controller{
 
 		//Home page
-		public function home(){
+		public function dashboard(){
 
 			$this->access_required = array('master');
 			$this->check_permissions();

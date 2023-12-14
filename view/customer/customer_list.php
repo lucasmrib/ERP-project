@@ -1,5 +1,5 @@
 <div class="flex justify-end font-semibold pb-2">
-    <a href="<?php echo HOME_URI.'records/register_employee'; ?>" class="flex items-center justify-center bg-indigo-400 hover:bg-indigo-300 w-36 rounded-lg p-1.5 mb-2 ring-1 ring-indigo-500 gap-2">
+    <a href="<?php echo HOME_URI.'records/register_customer'; ?>" class="flex items-center justify-center bg-indigo-400 hover:bg-indigo-300 w-36 rounded-lg p-1.5 mb-2 ring-1 ring-indigo-500 gap-2">
         <i class="bx bx-plus"></i>
         New
     </a>
@@ -9,15 +9,15 @@
     <table id="table" class="table stripe hover py-4">
         <thead>
             <tr>
-                <th>Name</th>
-                <th>Login</th>
-                <th>Access</th>
+                <th>CNPJ</th>
+                <th>Company Name</th>
+                <th>Contact Name</th>
                 <th>Status</th>
                 <th class="dt-body-right" style="max-width: 50px;">Actions</th>
             </tr>
         </thead>
         <tbody>
-            <?php foreach ($employees as $key => $value): ?>
+            <?php foreach (@$customers as $key => $value): ?>
                 <tr>
                     <td><?php echo $value['name']; ?></td>
                     <td><?php echo $value['login']; ?></td>
@@ -25,10 +25,10 @@
                     <td>
                         <?php switch($value['status']){
                             case 1:
-                                echo '<span class="bg-green-600 w-fit px-2 rounded-full">active</span>';
+                                echo '<span class="text-green-400">Active</span>';
                                 break;
                             case 0:
-                                echo '<span class="bg-red-600 w-fit px-2 rounded-full">inactive</span>';
+                                echo '<span class="text-red-400">Inactive</span>';
                                 break;
                         } ?>
                     </td>
